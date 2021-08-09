@@ -1,0 +1,462 @@
+/*
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5. Otros --> reglas CSS y más
+*/
+
+:root {
+    /* Colores */
+    --RojoSoft: #FA4659;
+    --AzulPrimario: #11CBD7;
+    --AzulSecundario: #C6F1E7;
+    --AzulSoft: #F0FFF3;
+    --Blanco: #fff;
+    --Gris: #bababa;
+    --Negro: #201e1c;   
+    --BlackWarm: #282623;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: 0 auto;
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 590px;
+    text-align: center;
+    background: linear-gradient(232deg, var(--BlackWarm), var(--AzulPrimario));
+    background-size: 400% 400%;
+
+    -webkit-animation: bgAnimateBitcoin 20s ease infinite;
+    -moz-animation: bgAnimateBitcoin 20s ease infinite;
+    animation: bgAnimateBitcoin 20s ease infinite;
+}
+
+@-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* header*/
+
+/* header imagen*/
+
+header img {
+    width: 150px;
+    height: 50px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+/*HEADER NOMBRE*/
+
+.header__title {
+    width: 100%;
+    height: 250px;
+    margin-top: 8%; 
+}
+
+.header__title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+    color:var(--AzulSoft);
+}
+
+.header__title p {
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color:var(--AzulSecundario);
+}
+
+.header__title span {
+    color:var(--RojoSoft);
+}
+
+.header__title .header-button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top:270px;
+    display: block;
+    margin-top: 300px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--AzulSoft);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);/*Sombra*/
+    border: 1 solid var(--RojoSoft);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--BlackWarm-);
+}
+
+.header__title .header-button:hover {
+    transition: .2s;
+    background: var(--AzulSecundario);
+    transform: scale(1.1);
+    box-shadow: 0 0 8px 0 #1cca9f; /*brillo de boton*/
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--AzulSoft);
+    align-items: 0 auto;
+}
+
+
+.container__img {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./img/Programing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main__container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main__container .backgroundIng {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("./img/Me.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__container-title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main__container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold; /*peso a la fuente*/
+    line-height: 2.6rem; /*altura*/
+    color: var(--AzulPrimario);
+}
+
+.main__container p {
+    color: var(--BlackWarm)
+}
+
+
+/*portafolio*/
+
+.main__portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 20px;
+    background-color: var(--BlackWarm);
+}
+
+.portfolio__card .imgP {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/BatatabitExample.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__card .imgP:hover{
+    transition: .2s;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
+}
+
+
+.main__portfolio--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main__portfolio--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--AzulPrimario);
+}
+
+.main__portfolio--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--Gris)
+}
+
+.portfolio__container--card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--Negro);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.16);
+
+}
+
+.portfolio__card-title {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--AzulSecundario);
+}
+
+.portfolio__card-body {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--Gris) 
+}
+
+/*card botones*/
+
+.code {
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: var(--AzulSoft);
+    color: var(--BlackWarm); 
+    border: 2px solid var(--RojoSoft);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 0.8rem;     
+}
+
+.code:hover {
+    transition: .2s;
+    transform: scale(1.4);
+    box-shadow: 0 0 8px 0 var(--RojoSoft); /*brillo de boton*/ 
+}
+
+.web {
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: var(--BlackWarm);
+    color: var(--AzulSoft); 
+    border: 2px solid var(--RojoSoft);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 0.8rem;    
+}
+
+.web:hover {
+    transition: .2s;
+    transform: scale(1.4);
+    box-shadow: 0 0 8px 0 var(--RojoSoft); /*brillo de boton*/ 
+}
+
+/*Formulario*/
+
+.contact {
+    background: linear-gradient(232deg, var(--BlackWarm), var(--AzulPrimario));
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.contact__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    background-color: var(--AzulSoft);
+    border: 2px solid var(--AzulPrimario);
+    border-radius: 40px;
+    color: var(--BlackWarm);
+    padding: 10px 10px 10px;
+    min-height: 600px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact__container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+
+.contact__container--for {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__container--for label {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.contact__container--for textarea {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    padding: 5px;
+    border-color: none;
+    min-width: 150px;
+    max-width: 280px;
+    max-height: 285px;
+}
+
+/*iconos de socialMedia*/
+.contact__container-socialMedia div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contact__container-socialMedia div img {
+    width: 30px;
+    margin-right: 10px;
+    background-color: var(--AzulPrimario);
+    border-radius: 10px;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-width: 0px;
+    border-bottom: 1.5px solid var(--BlackWarm);
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    outline: none;
+    height: 30px;
+}
+::placeholder {
+    color: var(--BlackWarm);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 14px;
+    margin-left: 55px;
+    background-color: var(--AzulSoft);
+    border: 2px solid var(--RojoSoft);
+    border-radius: 10px;
+    color: var(--BlackWarm);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70px;
+    height: 33px;
+    letter-spacing: 1px;   
+}
+
+/*pide de pagina-*/     
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: var(--AzulPrimario)
+}
+
+.footer a {
+    color: var(--AzulSoft);
+    cursor:pointer;
+    font-size: 1rem;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
