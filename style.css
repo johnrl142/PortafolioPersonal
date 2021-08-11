@@ -71,7 +71,7 @@ header {
 
 header img {
     width: 150px;
-    height: 50px;
+    height: 150px;
     margin-top: 60px;
     align-self: center;
 }
@@ -81,7 +81,7 @@ header img {
 .header__title {
     width: 100%;
     height: 250px;
-    margin-top: 8%; 
+    margin-top: 5%; 
 }
 
 .header__title h1 {
@@ -112,21 +112,21 @@ header img {
     padding: 15px;
     width: 229px;
     height: 48px;
-    background-color: var(--AzulSoft);
+    background-color: var(--RojoSoft);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);/*Sombra*/
     border: 1 solid var(--RojoSoft);
     border-radius: 5px;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--BlackWarm-);
+    color: var(--AzulSoft);
 }
 
 .header__title .header-button:hover {
     transition: .2s;
-    background: var(--AzulSecundario);
+    background: var(--RojoSoft);
     transform: scale(1.1);
-    box-shadow: 0 0 8px 0 #1cca9f; /*brillo de boton*/
+    box-shadow: 0 0 8px 0 red; /*brillo de boton*/
 }
 
 
@@ -151,7 +151,7 @@ main {
 .main__container {
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -172,6 +172,7 @@ main {
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
+    height: auto;
 }
 
 .main__container h2 {
@@ -186,6 +187,30 @@ main {
     color: var(--BlackWarm)
 }
 
+.main__container-title .description-button {
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+    padding: 15px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--RojoSoft);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);/*Sombra*/
+    border: 1 solid var(--RojoSoft);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--AzulSecundario);
+}
+
+.main__container-title .description-button:hover {
+    transition: .2s;
+    background: var(--RojoSoft);
+    transform: scale(1.1);
+    box-shadow: 0 0 8px 0 red; /*brillo de boton*/
+}
 
 /*portafolio*/
 
@@ -200,24 +225,87 @@ main {
     background-color: var(--BlackWarm);
 }
 
-.portfolio__card .imgP {
+/*IMAGENESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+
+.portfolio__card .imgP1 {
     display: inline-block;
     width: 20rem;
     height: 12rem;
     margin-bottom: 10px;
     margin-left: 30px;
     border: 1px solid var(--AzulPrimario);
-    background-image: url("./img/BatatabitExample.png");
+    background-image: url("./img/ClonDeGoogle.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.portfolio__card .imgP:hover{
+.portfolio__card .imgP1:hover{
     transition: .2s;
     transform: scale(1.2);
     box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
 }
+
+.portfolio__card .imgP2 {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/GaleriaDeFotos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__card .imgP2:hover{
+    transition: .2s;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
+}
+
+
+.portfolio__card .imgP3 {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/BlogPersonal.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__card .imgP3:hover{
+    transition: .2s;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
+}
+
+.portfolio__card .imgP4 {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/Batatabit.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__card .imgP4:hover{
+    transition: .2s;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
+}
+
+
+/* FINNNNNNNNNNNNNNNNNNN    IMAGENESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 
 
 .main__portfolio--title {
@@ -244,6 +332,8 @@ main {
     line-height: 1.8rem;
     color: var(--Gris)
 }
+
+
 
 .portfolio__container--card {
     display: flex;
@@ -322,6 +412,39 @@ main {
     box-shadow: 0 0 8px 0 var(--RojoSoft); /*brillo de boton*/ 
 }
 
+/*SKILLS*/
+
+.skills_container {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.skills_container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold; /*peso a la fuente*/
+    line-height: 2.6rem; /*altura*/
+    color: var(--AzulPrimario);
+}
+
+.skills_container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.skill{
+     width: 80px;
+}
+
+/*FIN SKILLS*/
+
 /*Formulario*/
 
 .contact {
@@ -344,9 +467,9 @@ main {
     background-color: var(--AzulSoft);
     border: 2px solid var(--AzulPrimario);
     border-radius: 40px;
-    color: var(--BlackWarm);
+    color: var(--AzulPrimario);
     padding: 10px 10px 10px;
-    min-height: 600px;
+    min-height: 400px;
     
     display: flex;
     justify-content: space-around;
@@ -384,19 +507,7 @@ main {
 }
 
 /*iconos de socialMedia*/
-.contact__container-socialMedia div {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
 
-.contact__container-socialMedia div img {
-    width: 30px;
-    margin-right: 10px;
-    background-color: var(--AzulPrimario);
-    border-radius: 10px;
-}
 
 .input {
     background-color: transparent;
@@ -416,37 +527,51 @@ main {
 }
 
 .button {
-    display: flex;
+    position: relative;
+    margin: 0 auto;
     align-items: center;
-    justify-content: center;
-    
-    margin-top: 14px;
-    margin-left: 55px;
-    background-color: var(--AzulSoft);
-    border: 2px solid var(--RojoSoft);
-    border-radius: 10px;
-    color: var(--BlackWarm);
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 7px;
+    padding-left: 12px;
+    display: block;
     width: 70px;
-    height: 33px;
-    letter-spacing: 1px;   
+    height: 30px;
+    background-color: var(--RojoSoft);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);/*Sombra*/
+    border: 1 solid var(--RojoSoft);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--AzulSecundario);
 }
+
+.button:hover {
+    background: var(--RojoSoft);
+    transform: scale(1.0);
+    box-shadow: 0 0 8px 0 red; /*brillo de boton*/
+}
+
 
 /*pide de pagina-*/     
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 100px;
     width: 100%;
     background-color: var(--AzulPrimario)
 }
 
+.footer p {
+   font-size: 1rem;
+   font-weight: bold;
+   line-height: 1.2rem;
+}
+
 .footer a {
-    color: var(--AzulSoft);
     cursor:pointer;
     font-size: 1rem;
     padding-left: 30px;
@@ -454,6 +579,10 @@ main {
 }
 .footer a:hover {
     text-decoration: underline;
+}
+
+.imgFooter {
+    width: 20px;
 }
 
 
