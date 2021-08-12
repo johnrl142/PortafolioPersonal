@@ -158,9 +158,10 @@ main {
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
+    
 }
 
-.main__container .backgroundIng {
+.main_container-description .backgroundIng {
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -179,7 +180,7 @@ main {
     height: auto;
 }
 
-.main__container h2 {
+.main_container-description h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold; /*peso a la fuente*/
@@ -187,7 +188,8 @@ main {
     color: var(--AzulPrimario);
 }
 
-.main__container p {
+.main_container-description p {
+    font-size: 1.4rem;
     color: var(--BlackWarm)
 }
 
@@ -244,12 +246,6 @@ main {
     background-repeat: no-repeat;
 }
 
-.portfolio__card .imgP1:hover{
-    transition: .2s;
-    transform: scale(1.2);
-    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
-}
-
 .portfolio__card .imgP2 {
     display: inline-block;
     width: 20rem;
@@ -263,13 +259,6 @@ main {
     background-repeat: no-repeat;
 }
 
-.portfolio__card .imgP2:hover{
-    transition: .2s;
-    transform: scale(1.2);
-    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
-}
-
-
 .portfolio__card .imgP3 {
     display: inline-block;
     width: 20rem;
@@ -281,12 +270,6 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.portfolio__card .imgP3:hover{
-    transition: .2s;
-    transform: scale(1.2);
-    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
 }
 
 .portfolio__card .imgP4 {
@@ -302,12 +285,6 @@ main {
     background-repeat: no-repeat;
 }
 
-.portfolio__card .imgP4:hover{
-    transition: .2s;
-    transform: scale(1.2);
-    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
-}
-
 .portfolio__card .imgP5 {
     display: inline-block;
     width: 20rem;
@@ -320,13 +297,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.portfolio__card .imgP5:hover{
-    transition: .2s;
-    transform: scale(1.2);
-    box-shadow: 0 0 8px 0 var(--AzulSoft); /*brillo de boton*/ 
-}
-
 
 /* FINNNNNNNNNNNNNNNNNNN    IMAGENESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 
@@ -356,8 +326,6 @@ main {
     color: var(--Gris)
 }
 
-
-
 .portfolio__container--card {
     display: flex;
     justify-content: center;
@@ -372,6 +340,11 @@ main {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0,0, 0.16);
 
+}
+.portfolio__container--card:hover {
+    transition: .2s;
+    transform: scale(1.4);
+    box-shadow: 0 0 8px 0 var(--AzulPrimario);
 }
 
 .portfolio__card-title {
@@ -406,13 +379,10 @@ main {
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 0.8rem;     
+    cursor: pointer;
 }
 
-.code:hover {
-    transition: .2s;
-    transform: scale(1.4);
-    box-shadow: 0 0 8px 0 var(--RojoSoft); /*brillo de boton*/ 
-}
+
 
 .web {
     width: 50px;
@@ -427,12 +397,7 @@ main {
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 0.8rem;    
-}
-
-.web:hover {
-    transition: .2s;
-    transform: scale(1.4);
-    box-shadow: 0 0 8px 0 var(--RojoSoft); /*brillo de boton*/ 
+    cursor: pointer;
 }
 
 /*SKILLS*/
@@ -460,6 +425,10 @@ main {
     position: relative;
     width: 100%;
     height: auto;
+}
+
+.skills_container-card p {
+    font-size: 1.5rem;
 }
 
 .skill{
@@ -502,9 +471,9 @@ main {
 .contact__container h2 {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
 }
 
 .contact__container--for {
@@ -513,15 +482,15 @@ main {
 }
 
 .contact__container--for label {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    line-height: 1.2rem;
+    line-height: 1.6rem;
 }
 
 .contact__container--for textarea {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    line-height: 1.2rem;
+    line-height: 1.6rem;
     padding: 5px;
     border-color: none;
     min-width: 150px;
@@ -538,7 +507,7 @@ main {
     border-top: 0px;
     border-width: 0px;
     border-bottom: 1.5px solid var(--BlackWarm);
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: sans-serif;
     margin-bottom: 10px;
     padding: 0px 10px;
