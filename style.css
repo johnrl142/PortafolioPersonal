@@ -14,9 +14,8 @@
     --AzulSoft: #F0FFF3;
     --Blanco: #fff;
     --Gris: #bababa;
-    --Negro: #201e1c;   
+    --Negro: #201e1c;
     --BlackWarm: #282623;
-
 }
 
 * {
@@ -81,7 +80,7 @@ header img {
 .header__title {
     width: 100%;
     height: 250px;
-    margin-top: 5%; 
+    margin-top: 5%;
 }
 
 .header__title h1 {
@@ -105,12 +104,12 @@ header img {
 
 .header__title .header-button {
     position: absolute;
-    left: calc(50% - 118px);
+    left: calc(50% - 112px);
     top:270px;
     display: block;
     margin-top: 300px;
     padding: 15px;
-    width: 229px;
+    width: 200px;
     height: 48px;
     background-color: var(--RojoSoft);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);/*Sombra*/
@@ -138,7 +137,7 @@ main {
 }
 
 .main_container-description{
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -158,7 +157,7 @@ main {
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
-    
+
 }
 
 .main_container-description .backgroundIng {
@@ -364,43 +363,73 @@ main {
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1rem;
-    color: var(--Gris) 
+    color: var(--Gris)
 }
 
 /*card botones*/
-
+/*
 .code {
     width: 50px;
     height: 20px;
     margin-top: 20px;
     margin-left: 10px;
     background-color: var(--AzulSoft);
-    color: var(--BlackWarm); 
+    color: var(--BlackWarm);
     border: 2px solid var(--RojoSoft);
     border-radius: 4px;
     font-family: "DM Sans", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    line-height: 0.8rem;     
+    line-height: 0.8rem;
     cursor: pointer;
 }
 
+.code a {
+    padding: 10px;
+}*/
 
-
-.web {
+.code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 20px;
     margin-top: 20px;
+    margin-top: 20px;
     margin-left: 10px;
-    background-color: var(--BlackWarm);
-    color: var(--AzulSoft); 
+    background-color: var(--AzulSoft);
+    color: var(--BlackWarm);
     border: 2px solid var(--RojoSoft);
     border-radius: 4px;
     font-family: "DM Sans", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    line-height: 0.8rem;    
+    line-height: 0.8rem;
     cursor: pointer;
+    text-decoration: none;
+  
+}
+
+
+.web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: var(--BlackWarm);
+    color: var(--AzulSoft);
+    border: 2px solid var(--RojoSoft);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /*SKILLS*/
@@ -444,12 +473,14 @@ main {
 
 .contact {
     background: linear-gradient(232deg, var(--BlackWarm), var(--AzulPrimario));
-    background-size: 400% 400%;
+    background-size: 300% 300%;
+    width: 100%;
+    min-width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px 30px;
+    padding: 5px;
     min-height: calc(100vh - 100px);
 }
 
@@ -464,10 +495,10 @@ main {
     border-radius: 40px;
     color: var(--AzulPrimario);
     padding: 50px;
-    min-height: 400px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    padding: 15px 5px 10px 5px;
 }
 
 .contact__container h2 {
@@ -476,11 +507,15 @@ main {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
+    padding-top: 10px;
+
 }
 
 .contact__container--for {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    padding-top: 15px;
 }
 
 .contact__container--for label {
@@ -546,7 +581,7 @@ main {
 }
 
 
-/*pide de pagina-*/     
+/*pide de pagina-*/
 
 .footer {
     display: flex;
