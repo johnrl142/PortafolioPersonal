@@ -160,6 +160,13 @@ main {
 
 }
 
+.main_container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main_container-description .backgroundIng {
     width: 200px;
     height: 200px;
@@ -498,7 +505,7 @@ main {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 15px 5px 10px 5px;
+    padding: 20px 5px 20px 5px;
 }
 
 .contact__container h2 {
