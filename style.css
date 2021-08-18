@@ -188,14 +188,14 @@ main {
 
 .main_container-description h2 {
     margin-bottom: 30px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold; /*peso a la fuente*/
-    line-height: 2.6rem; /*altura*/
+    line-height: 2.2rem; /*altura*/
     color: var(--AzulPrimario);
 }
 
 .main_container-description p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: var(--BlackWarm)
 }
 
@@ -318,9 +318,9 @@ main {
 
 .main__portfolio--title h2 {
     margin-bottom: 20px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 2.6rem;
+    line-height: 2.2rem;
     color: var(--AzulPrimario);
 }
 
@@ -451,9 +451,9 @@ main {
 
 .skills_container h2 {
     margin-bottom: 30px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold; /*peso a la fuente*/
-    line-height: 2.6rem; /*altura*/
+    line-height: 2.2rem; /*altura*/
     color: var(--AzulPrimario);
 }
 
@@ -467,7 +467,7 @@ main {
 }
 
 .skills_container-card p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .skill{
@@ -488,6 +488,7 @@ main {
     width: 100%;
     min-width: 320px;
     padding: 5px;
+    margin: 0;
     min-height: calc(100vh - 100px);
 }
 
@@ -511,9 +512,9 @@ main {
 .contact__container h2 {
     display: flex;
     justify-content: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 2.6rem;
+    line-height: 2.2rem;
     padding-top: 10px;
 
 }
