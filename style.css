@@ -472,14 +472,14 @@ main {
 /*Formulario*/
 
 .contact {
-    background: linear-gradient(232deg, var(--BlackWarm), var(--AzulPrimario));
-    background-size: 300% 300%;
-    width: 100%;
-    min-width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: linear-gradient(232deg, var(--BlackWarm), var(--AzulPrimario));
+    background-size: 300% 300%;
+    width: 100%;
+    min-width: 320px;
     padding: 5px;
     min-height: calc(100vh - 100px);
 }
@@ -516,6 +516,7 @@ main {
     flex-direction: column;
     width: 80%;
     padding-top: 15px;
+    padding: 0px;
 }
 
 .contact__container--for label {
