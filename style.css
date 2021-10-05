@@ -95,6 +95,8 @@ header img {
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.2rem;
+    min-width: 300px;
+
     color:var(--AzulSecundario);
 }
 
@@ -137,6 +139,10 @@ main {
 }
 
 .main_container-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     margin: 0 auto;
 }
@@ -151,20 +157,25 @@ main {
     background-repeat: no-repeat;
 }
 
+/*descripción*/
+
 .main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     padding-top: 50px;
     padding-bottom: 30px;
-    align-items: center;
 
 }
 
 .main_container-description {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 320px;
+    max-width: 800px;
     height: auto;
 }
 
@@ -179,19 +190,11 @@ main {
     background-repeat: no-repeat;
 }
 
-.main__container-title {
+.main_container-description h2 {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
-    height: auto;
-}
-
-.main_container-description h2 {
-    margin-bottom: 30px;
+    align-items: center;
+    margin: 0px 20px 30px 20px;
     font-size: 2rem;
     font-weight: bold; /*peso a la fuente*/
     line-height: 2.2rem; /*altura*/
@@ -199,11 +202,16 @@ main {
 }
 
 .main_container-description p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
-    color: var(--BlackWarm)
+    color: var(--BlackWarm);
+    margin: 0px 20px 30px 20px;
+    min-width: 300px;
 }
 
-.main__container-title .description-button {
+.main_container-description .description-button {
     position: relative;
     margin: 0 auto;
     align-items: center;
@@ -219,9 +227,10 @@ main {
     font-weight: bold;
     text-decoration: none;
     color: var(--AzulSecundario);
+    margin-bottom: 30px;
 }
 
-.main__container-title .description-button:hover {
+.main_container-description .description-button:hover {
     transition: .2s;
     background: var(--RojoSoft);
     transform: scale(1.1);
@@ -241,7 +250,7 @@ main {
     background-color: var(--BlackWarm);
 }
 
-/*IMAGENESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+/*IMAGENES*/
 
 .portfolio__card .imgP1 {
     display: inline-block;
@@ -289,7 +298,7 @@ main {
     margin-bottom: 10px;
     margin-left: 30px;
     border: 1px solid var(--AzulPrimario);
-    background-image: url("./img/Batatabit.png");
+    background-image: url("./img/batatabit.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +317,19 @@ main {
     background-repeat: no-repeat;
 }
 
-/* FINNNNNNNNNNNNNNNNNNN    IMAGENESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+
+/*pictures*/
+
+.portfolio__card .pictures {
+    display: inline-block;
+    width: 35rem;
+    height:40rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+}
+
+/* FIN IMAGENES*/
 
 
 .main__portfolio--title {
@@ -405,9 +426,7 @@ main {
     align-items: center;
     width: 50px;
     height: 20px;
-    margin-top: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 20px 10px 0px 10px;
     background-color: var(--AzulSoft);
     color: var(--BlackWarm);
     border: 2px solid var(--RojoSoft);
@@ -421,16 +440,13 @@ main {
   
 }
 
-
 .web {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 20px;
-    margin-top: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 20px 10px 0px 10px;
     background-color: var(--BlackWarm);
     color: var(--AzulSoft);
     border: 2px solid var(--RojoSoft);
