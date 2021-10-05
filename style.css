@@ -217,8 +217,8 @@ main {
     align-items: center;
     display: block;
     padding: 15px;
-    width: 150px;
-    height: 40px;
+    width: auto;
+    height: auto;
     background-color: var(--RojoSoft);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);/*Sombra*/
     border: 1 solid var(--RojoSoft);
@@ -424,9 +424,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 20px;
+    margin: 0 auto;
+    width: auto;
+    height:auto;
     margin: 20px 10px 0px 10px;
+    padding: 5px;
     background-color: var(--AzulSoft);
     color: var(--BlackWarm);
     border: 2px solid var(--RojoSoft);
@@ -444,8 +446,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 20px;
+    margin: 0 auto;
+    width: auto;
+    height:auto;
+    padding: 5px;
     margin: 20px 10px 0px 10px;
     background-color: var(--BlackWarm);
     color: var(--AzulSoft);
