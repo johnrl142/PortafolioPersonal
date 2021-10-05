@@ -25,7 +25,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size:65%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: 0 auto;
 }
@@ -84,7 +84,7 @@ header img {
 }
 
 .header__title h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 3.4rem;
     color:var(--AzulSoft);
@@ -92,7 +92,7 @@ header img {
 
 .header__title p {
     margin-top: 25px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 2.2rem;
     min-width: 300px;
@@ -180,7 +180,10 @@ main {
 }
 
 .main_container-description .backgroundIng {
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 200px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -195,7 +198,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0px 20px 30px 20px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold; /*peso a la fuente*/
     line-height: 2.2rem; /*altura*/
     color: var(--AzulPrimario);
@@ -205,7 +208,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
     color: var(--BlackWarm);
     margin: 0px 20px 30px 20px;
     min-width: 300px;
