@@ -96,7 +96,6 @@ header img {
     font-weight: 500;
     line-height: 2.2rem;
     min-width: 300px;
-
     color:var(--AzulSecundario);
 }
 
@@ -183,7 +182,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-     width: 200px;
+    width: 200px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -204,11 +203,10 @@ main {
     color: var(--AzulPrimario);
 }
 
-.main_container-description p {
+.main_container-description .p-description {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    justify-items: center;
     font-size: 1.5rem;
     color: var(--BlackWarm);
     margin: 0px 20px 30px 20px;
