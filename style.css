@@ -319,6 +319,45 @@ main {
     background-repeat: no-repeat;
 }
 
+.portfolio__card .imgP6 {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/Fylo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__card .imgP7 {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/Calculadora.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio__card .imgP8 {
+    display: inline-block;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 1px solid var(--AzulPrimario);
+    background-image: url("./img/semaforo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /*pictures*/
 
